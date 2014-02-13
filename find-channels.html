@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tuned In</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body><div style="width: 740px; margin: auto;">
+
+	<h1>
+		<img src="img/logo-lg-blue.png"
+		  alt="Logo" height="50" width="50" align="middle">&nbsp;Tuned In
+	</h1>
+
+	<br>
+
+    <ul class="nav nav-tabs">
+      <li><a href="my-subscriptions.html"><i class="icon-film"></i> My Subscriptions</a></li>
+      <li class="active"><a href="find-channels.html"><i class="icon-search"></i> Find &amp; Subscribe</a></li>
+	  <li><a href="manage-channels.html"><i class="icon-wrench"></i> Manage My Channels</a></li>
+      <li><a href="create-channel.html"><i class="icon-plus"></i> Start a Channel</a></li>
+    </ul>
+
+	<!-- If the user has no subscriptions:
+			1. This should be the default page
+			2. The alert-info div below should appear -->
+	
+	<div class="alert alert-info">
+		Hi Bill, let's get started by subscribing to some channels!
+		You can even <a href="create-channel.html">start your own <i class="icon-arrow-right"></i></a>
+	</div>
+
+	<table class="table">
+		<thead>
+			<th colspan="2">
+				<div style="float: left;" class="btn-group" data-toggle="buttons-radio">
+				  <button type="button" class="btn active"><i class="icon-thumbs-up"></i> My Friends &amp; Interests</button>
+				  <button type="button" class="btn"><i class="icon-globe"></i> All Channels</button>
+				</div>
+
+				<div class="input-append" style="float: right;">
+				  <input size="30" id="appendedInputButton" type="text" placeholder="Search channels..."><button class="btn" type="button"><i class="icon-search"></i></button>
+				</div>
+			</th>
+		</thead>
+
+		<tr> <!-- Channel that your friends have subscribed to -->
+			<td width="125">
+				<br>
+				<img src="img/webby.jpg" class="img-rounded" height="125" width="125">
+			</td>
+			<td>
+				<h3>The Webbies</h3>
+				
+				<p>
+				  <button class="btn btn-small btn-success" type="button"><i class="icon-plus"></i> Subscribe to Channel</button>
+  				  <br><br>
+				</p>
+				
+				<h4>Latest Videos</h4>
+				<p><small>Curated by <a href="#">The Webby Awards</a> 
+					(Liked by you)</small></p>
+				<ul class="unstyled">
+				  <li>
+					<a href="#"><i class="icon-play-circle"></i>
+					The Webbies - Awards Ceremony 2012</a>
+				  </li>
+				</ul>
+
+				<br>
+
+				<h4>About this Channel</h4>
+				<p><small>
+					The Webby Awards is the leading international award honoring excellence on the Internet. Established in 1996 during the Web\'s infancy, The Webbys is presented by the International Academy of Digital Arts and Sciences (IADAS) a 1,000+ member judging body that includes Executive Members comprised of leading Web experts, business figures, luminaries, visionaries and creative celebrities, and Associate Members who are former <a href="#">Read More...</a>
+				<small></p>
+			</td>
+		</tr>
+
+		<tr> <!-- Channel for a FB page you admin -->
+			<td width="125">
+				<br>
+				<img src="img/pinkglove.jpg" class="img-rounded" height="125" width="125">
+			</td>
+			<td>
+				<h3>Pink Glove Dance</h3>
+				
+				<p>
+				  <button class="btn btn-small btn-success" type="button"><i class="icon-plus"></i> Subscribe to Channel</button>
+ 				  <button class="btn btn-small" type="button"><i class="icon-wrench"></i> Manage Channel</button>
+  				  <br><br>
+				</p>
+				
+				<h4>Latest Videos</h4>
+				<p><small>Curated by <a href="#">American Cancer Society</a>
+					<!-- if we know they're an admin of the FB page -->
+					(You're an admin)</small></p>
+				<ul class="unstyled">
+				  <li>
+					<a href="#"><i class="icon-play-circle"></i>
+					Pink Glove Dance: Breast Cancer Survivors</a>
+				  </li>
+				</ul>
+				
+				<br>
+				
+				<h4>About this Channel</h4>
+				<p><small>
+					Three years ago, when Medline produced the original Pink Glove Dance video to raise breast cancer awareness, little did we know that it would take on a life of its own. The video has since generated more 13 million views on YouTube and inspired countless pink glove dance videos and events around the world. The response to the original video from the healthcare community, survivors and family members of survivors was overwhelming <a href="#">Read More...</a>
+				<small></p>
+			</td>
+		</tr>
+		
+	</table>
+	
+	
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </div></body>
+</html>
+

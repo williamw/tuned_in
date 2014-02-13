@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tuned In</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body><div style="width: 740px; margin: auto;">
+
+	<h1>
+		<img src="img/logo-lg-blue.png"
+		  alt="Logo" height="50" width="50" align="middle">&nbsp;Tuned In
+	</h1>
+
+	<br>
+
+    <ul class="nav nav-tabs">
+      <li><a href="my-subscriptions.html"><i class="icon-film"></i> My Subscriptions</a></li>
+      <li><a href="find-channels.html"><i class="icon-search"></i> Find &amp; Subscribe</a></li>
+	  <li><a href="manage-channels.html"><i class="icon-wrench"></i> Manage My Channels</a></li>
+      <li class="active"><a href="create-channel.html"><i class="icon-plus"></i> Start a Channel</a></li>
+    </ul>
+
+	<!-- Preferably the add/edit feature would be a modal, not a separate page -->
+
+	<form class="form-horizontal" action="manage-channels.html">
+	  <div class="control-group">
+	    <label class="control-label" for="inputEmail">Channel Name</label>
+	    <div class="controls">
+	      <input type="text" id="inputName" placeholder="My Channel Name">
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <label class="control-label" for="inputEmail">About this Channel</label>
+	    <div class="controls">
+	      <textarea rows="3" cols="20"></textarea>
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <label class="control-label" for="inputPassword">Banner (450x250)</label>
+	    <div class="controls">
+	      <input type="file" id="inputFullSize">
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <label class="control-label" for="inputPassword">Thumbnail (250x250)</label>
+	    <div class="controls">
+	      <input type="file" id="inputFullSize">
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <label class="control-label" for="inputPassword">Cover Photo (2000x768)</label>
+	    <div class="controls">
+	      <input type="file" id="inputFullSize">
+	    </div>
+	  </div>
+	
+	  <div class="control-group">
+	    <div class="controls">
+	      <button type="submit" class="btn btn-success">Create Channel</button>
+	      <button type="submit" class="btn">Cancel</button>
+	    </div>
+	  </div>
+	</form>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </div></body>
+</html>

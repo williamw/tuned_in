@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tuned In</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body><div style="width: 740px; margin: auto;">
+
+	<h1>
+		<img src="img/logo-lg-blue.png"
+		  alt="Logo" height="50" width="50" align="middle">&nbsp;Tuned In
+	</h1>
+
+	<br>
+
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="my-subscriptions.html"><i class="icon-film"></i> My Subscriptions</a></li>
+      <li><a href="find-channels.html"><i class="icon-search"></i> Find &amp; Subscribe</a></li>
+	  <li><a href="manage-channels.html"><i class="icon-wrench"></i> Manage My Channels</a></li>
+      <li><a href="create-channel.html"><i class="icon-plus"></i> Start a Channel</a></li>
+    </ul>
+
+	<!-- This is the default page if the user has subscriptions.
+		If not, the default page is Find & Subscribe.
+		If the user comes to this page but has no subscriptions:
+			Show the alert-info div found at the top of find-channels.html
+			-->
+
+	<!-- If the user has just suggested a video -->
+	<div class="alert alert-block">
+	  <button type="button" class="close" data-dismiss="alert">x</button>
+	  <h4>Thanks, your video has been suggested!</h4>
+		We'll notify you if the curators of
+		<em>2012 Dallas International Film Festival</em> approve it for all subscribers.
+	</div>
+
+	<table class="table">
+		<thead>
+			<th colspan="2">
+				<div style="float: left;" class="btn-group" data-toggle="buttons-radio">
+				  <button type="button" class="btn active">Last Updated</button>
+				  <button type="button" class="btn">A to Z</button>
+				</div>
+
+				<div class="input-append" style="float: right;">
+				  <input size="30" id="appendedInputButton" type="text" placeholder="Search my subscriptions..."><button class="btn" type="button"><i class="icon-search"></i></button>
+				</div>
+			</th>
+		</thead>
+		<tr>
+			<td width="125">
+				<br>
+				<img src="img/dallas.jpg" class="img-rounded" height="125" width="125">
+			</td>
+			<td>
+				<h3>2012 Dallas International Film Festival</h3>
+				<p>
+				  <button class="btn btn-small btn-primary" type="button"><i class="icon-film"></i> Suggest a Video</button>
+				  <button class="btn btn-small btn-danger" type="button"><i class="icon-remove"></i> Unsubscribe</button>	
+					<br><br>
+				</p>
+			
+				<h4>Latest Videos</h4>
+				<p><small>Curated by <a href="#">Dallas International Film Festival</a> <br>
+					<!-- if we can list which friends that'd be ideal -->
+					<a href="#">Mark Ferry</a> and <a href="#">2 more friends</a> are subscribers</small></p>
+				<ul class="unstyled">
+				  <li>
+					<a href="#"><i class="icon-play-circle"></i>
+					Six Years of the Dallas International Film Festival</a>
+				  </li>
+				  <li>
+					<a href="#"><i class="icon-play-circle"></i>
+					Dallas International Film Festival 2012 - Wes Cunn</a>
+				  </li>
+				  <li>
+					<a href="#"><i class="icon-play-circle"></i>
+					DIFF 2012: Red Carpet - April 18, 2012</a>
+				  </li>
+				</ul>
+
+				<br>
+
+				<h4>About this Channel</h4>
+				<p><small>
+					Welcome to the 6th annual Dallas International Film Festival, presented by Boardwalk Auto Group Volkswagen Dealers and produced by the Dallas Film Society. Since the Lumire brothers wowed audiences with their first short films in the mid-1890s, movies have made a mark with everyone who sees them. This Festivals focus is not just to bring to Dallas contemporary independent films that make marks big enough for Texas and beyond <a href="#">Read More...</a>
+				<small></p>
+			</td>
+		</tr>
+	</table>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </div></body>
+</html>

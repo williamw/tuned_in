@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tuned In</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body><div style="width: 740px; margin: auto;">
+
+	<h1>
+		<img src="img/logo-lg-blue.png"
+		  alt="Logo" height="50" width="50" align="middle">&nbsp;Tuned In
+	</h1>
+
+	<br>
+
+    <ul class="nav nav-tabs">
+      <li><a href="my-subscriptions.html"><i class="icon-film"></i> My Subscriptions</a></li>
+      <li><a href="find-channels.html"><i class="icon-search"></i> Find &amp; Subscribe</a></li>
+	  <li class="active"><a href="manage-channels.html"><i class="icon-wrench"></i> Manage My Channels</a></li>
+      <li><a href="create-channel.html"><i class="icon-plus"></i> Start a Channel</a></li>
+    </ul>
+
+	<!-- If the user has just created a channel -->
+	<div class="alert alert-success">
+		Ok! Your channel <em>Pink Glove Dance</em> has been created. Want to <a href="add-video.html">add some videos</a>?
+	</div>
+
+	<table class="table">
+		<thead>
+			<th colspan="2">
+				<div style="float: left;" class="btn-group" data-toggle="buttons-radio">
+				  <button type="button" class="btn active">Last Updated</button>
+				  <button type="button" class="btn">A to Z</button>
+				</div>
+
+				<div class="input-append" style="float: right;">
+				  <input size="30" id="appendedInputButton" type="text" placeholder="Search my channels..."><button class="btn" type="button"><i class="icon-search"></i></button>
+				</div>
+			</th>
+		</thead>
+		<tr>
+			<td width="125">
+				<br>
+				<img src="img/pinkglove.jpg" class="img-rounded" height="125" width="125"> <br>
+				<!-- Clicking pencil opens the Edit/Add Channel page -->
+				<button class="btn btn-small btn-link" type="button"><i class="icon-pencil"></i> Change Photos</button>
+			</td>
+			<td>
+				<h3><!-- Clicking pencil opens the Edit/Add Channel page -->
+					Pink Glove Dance<a href="#" role="button" class="btn btn-small btn-link"><i class="icon-pencil"></i></a>
+				</h3>
+				
+				<p>
+				 <a href="add-video.html" role="button" class="btn btn-small btn-primary"><i class="icon-plus"></i> Add Video(s)</a>
+				 <button class="btn btn-small" type="button"><i class="icon-share"></i> Promote Channel </button>
+				 <button class="btn btn-small" type="button"><i class="icon-trash"></i> Delete Channel</button>
+				</p>
+				<br>
+				
+				<h4>All Videos</h4>
+				<ul class="unstyled">
+				  <li>
+					<em>You haven't added any videos yet</em>
+				  </li>
+				</ul>
+				
+				<br>
+				
+				<h4><!-- Clicking pencil opens the Edit/Add Channel page -->
+					About this Channel<a href="#" role="button" class="btn btn-small btn-link"><i class="icon-pencil"></i></a>
+				</h4>
+				
+				<p><small>
+					Three years ago, when Medline produced the original Pink Glove Dance video to raise breast cancer awareness, little did we know that it would take on a life of its own. The video has since generated more 13 million views on YouTube and inspired countless pink glove dance videos and events around the world. The response to the original video from the healthcare community, survivors and family members of survivors was overwhelming <a href="#">Read More...</a>
+				<small></p>
+			</td>
+		</tr>
+		
+	</table>
+	
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </div></body>
+</html>
+
